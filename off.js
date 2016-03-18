@@ -12,10 +12,10 @@ casper.on('page.error', function(msg, trace) {
 });
 casper.test.begin('Resurrectio test', function(test) {
    casper.start('https://www.surechembl.org/search/');
-   casper.waitForSelector("#sure-query",
+   casper.waitForSelector("#sure-qukkhkhkery",
        function success() {
            test.assertExists("#sure-query");
-           this.click("#sure-query");
+           this.click("#sure-quekhkhkhry");
        },
        function fail() {
            test.assertExists("#sure-query");
