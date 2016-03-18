@@ -35,14 +35,6 @@ casper.test.begin('Resurrectio test', function(test) {
        function fail() {
            test.assertExists("form[name=search] input[type=submit][value='Search']");
    });
-   casper.waitForSelector(x("//a[normalize-space(text())='US-9284309-B2']"),
-       function success() {
-           test.assertExists(x("//a[normalize-space(text())='US-9284309-B2']"));
-           this.click(x("//a[normalize-space(text())='US-9284309-B2']"));
-       },
-       function fail() {
-           test.assertExists(x("//a[normalize-space(text())='US-9284309-B2']"));
-   });
 
    casper.run(function() {test.done();});
 });
