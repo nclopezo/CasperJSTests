@@ -12,13 +12,13 @@ casper.on('page.error', function(msg, trace) {
 });
 casper.test.begin('Resurrectio test', function(test) {
    casper.start('https://www.surechembl.org/search/');
-   casper.waitForSelector("#sure-qukkhkhkery",
+   casper.waitForSelector("#sure-query",
        function success() {
            test.assertExists("#sure-query");
            this.click("#sure-query");
        },
        function fail() {
-           test.assertExists("#sure-qugjgjgjgjgjery");
+           test.assertExists("#sure-query");
    });
    casper.waitForSelector("textarea[name='sure-query']",
        function success() {
