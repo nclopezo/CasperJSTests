@@ -15,10 +15,10 @@ casper.test.begin('Resurrectio test', function(test) {
    casper.waitForSelector("#sure-qukkhkhkery",
        function success() {
            test.assertExists("#sure-query");
-           this.click("#sure-quekhkhkhry");
+           this.click("#sure-query");
        },
        function fail() {
-           test.assertExists("#sure-query");
+           test.assertExists("#sure-qugjgjgjgjgjery");
    });
    casper.waitForSelector("textarea[name='sure-query']",
        function success() {
